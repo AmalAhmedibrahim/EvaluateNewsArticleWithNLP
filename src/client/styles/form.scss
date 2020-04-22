@@ -1,0 +1,39 @@
+form {
+    border: 1px solid #545454;
+    border-radius: 3px;
+    padding: 40px;
+    background-color: #9e9e9e;
+}
+
+input {
+    padding: 5px 20px;
+    width: 100%;
+    line-height: 16px;
+    margin: 10px 0;
+}
+.title {
+    display: flex;
+    justify-content: center;
+    font-size: 3em;
+}
+
+.result-container {
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    #results {
+        font-size: 2.5em;
+    }
+    .result-items {
+        list-style-type: circle;
+        font-size: 1.2em;
+        .res-title {
+            font-size: 1.2em;
+            text-transform: capitalize;
+            color: #795548;
+        }
+    }
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>News Article With NLP</title>
+</head>
+
+<body>
+
+    <header>
+        <!-- <div class="">
+            Logo
+        </div>
+        <div class="">
+            navigation
+        </div> -->
+    </header>
+
+    <main>
+        <div class="title">
+            News Article Powered By NLP
+        </div>
+        <section>
+            <form class="" onsubmit="return handleSubmit(event)">
+                <input id="input-text" type="text" name="input" value="" placeholder="Enter Artical URL">
+                <input type="submit" name="" value="submit" required onclick="return Client.handleSubmit(event)"
+                    onsubmit="return handleSubmit(event)">
+            </form>
+            <section>
+
+                <section class="result-container">
+                    <strong id="results">Form Results:</strong>
+                    <div>
+                        <ul class="result-items">
+                            <li>
+                                <span class="res-title">polarity : </span>
+                                <span class="res-data" id="polarity"></span>
+                            </li>
+                            <li>
+                                <span class="res-title">subjectivity : </span>
+                                <span class="res-data" id="subjectivity"></span>
+                            </li>
+                            <li>
+                                <span class="res-title">polarity confidence : </span>
+                                <span class="res-data" id="confidence"></span>
+                            </li>
+                            <li>
+                                <span class="res-title">subjectivity confidence : </span>
+                                <span class="res-data" id="subjectivity-c"></span>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+    </main>
+
+    <footer>
+        <p>Copyright &copy; Amal Ahmed. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Check that service workers are supported
+        if ('serviceWorker' in navigator) {
+            // Use the window load event to keep the page load performant
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js');
+            });
+        }
+    </script>
+</body>
+
+</html>
